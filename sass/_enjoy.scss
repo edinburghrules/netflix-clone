@@ -8,9 +8,22 @@
    grid-template-rows: 2vh 1fr 2vh;
    align-items: center;
 
+   @media only screen and (max-width: 800px) {
+      padding: 4rem;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+   }
+
    &__text-container {
       grid-column: 2/3;
       grid-row: 2/3;
+
+      @media only screen and (max-width: 800px) {
+         grid-column: 1/-1;
+         grid-row: 1/2;
+         text-align: center;
+      }
    }
 
    &__title {
@@ -29,6 +42,10 @@
       grid-row: 2/3;
       position: relative;
       width: 100%;
+
+      @media only screen and (max-width: 800px) {
+         grid-column: 1/-1;
+      }
    }
 
    &__image {
@@ -47,6 +64,10 @@
       top: 15%;
       left: 12%;
       display: block;
+
+      @media only screen and (min-width: 1400px) {
+         width: 100%;
+      }
    }
 
 

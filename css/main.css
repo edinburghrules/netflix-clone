@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     html {
       font-size: 50%; } }
 
@@ -131,9 +131,20 @@ body {
   grid-template-columns: 1fr 40% 40% 1fr;
   grid-template-rows: 2vh 1fr 2vh;
   align-items: center; }
+  @media only screen and (max-width: 800px) {
+    .enjoy {
+      padding: 4rem;
+      align-items: center;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto); } }
   .enjoy__text-container {
     grid-column: 2/3;
     grid-row: 2/3; }
+    @media only screen and (max-width: 800px) {
+      .enjoy__text-container {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        text-align: center; } }
   .enjoy__title {
     font-size: 4.4rem;
     font-weight: 500;
@@ -146,6 +157,9 @@ body {
     grid-row: 2/3;
     position: relative;
     width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .enjoy__image-container {
+        grid-column: 1/-1; } }
   .enjoy__image {
     position: relative;
     width: 100%;
@@ -158,3 +172,6 @@ body {
     top: 15%;
     left: 12%;
     display: block; }
+    @media only screen and (min-width: 1400px) {
+      .enjoy__video {
+        width: 100%; } }
