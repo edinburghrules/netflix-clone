@@ -1,5 +1,7 @@
 .header {
    background: radial-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.9)), url('../img/showcase-bg.jpg');
+   background-position: center;
+   background-size: cover;
    color: $color-white;
    padding-bottom: 15rem;
    border-bottom: 1rem solid $color-grey;
@@ -30,7 +32,7 @@
    }
 
    &__main {
-      margin-top: 15rem;
+      margin-top: 10rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, minmax(min-content, max-content));
@@ -51,8 +53,8 @@
    }
 
    &__title {
-      font-size: 4rem;
-      font-weight: 500;
+      font-size: 5rem;
+      font-weight: 600;
       grid-column: 2/4;
 
       @media only screen and (max-width: 500px) {
@@ -97,6 +99,10 @@
       font-size: 1.6rem;
       padding: 1rem;
       color: #333;
+
+      @media only screen and (max-width: 400px) {
+         font-size: 2rem;
+      }
    }
 
    &__trybtn {

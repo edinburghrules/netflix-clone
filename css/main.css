@@ -17,10 +17,12 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr auto; }
 
 .header {
   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../img/showcase-bg.jpg");
+  background-position: center;
+  background-size: cover;
   color: #ffffff;
   padding-bottom: 15rem;
   border-bottom: 1rem solid #333333; }
@@ -44,7 +46,7 @@ body {
     font-weight: 300;
     letter-spacing: 1px; }
   .header__main {
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, minmax(min-content, max-content));
@@ -61,8 +63,8 @@ body {
         display: grid;
         grid-template-columns: 1fr; } }
   .header__title {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-weight: 600;
     grid-column: 2/4; }
     @media only screen and (max-width: 500px) {
       .header__title {
@@ -96,6 +98,9 @@ body {
     font-size: 1.6rem;
     padding: 1rem;
     color: #333; }
+    @media only screen and (max-width: 400px) {
+      .header__input {
+        font-size: 2rem; } }
   .header__trybtn {
     all: unset;
     height: 100%;
@@ -116,3 +121,40 @@ body {
     @media only screen and (max-width: 400px) {
       .header__text {
         grid-column: 1/-1; } }
+
+.enjoy {
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom: 1rem solid #333333;
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-template-columns: 1fr 40% 40% 1fr;
+  grid-template-rows: 2vh 1fr 2vh;
+  align-items: center; }
+  .enjoy__text-container {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .enjoy__title {
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem; }
+  .enjoy__sub {
+    font-size: 2.5rem;
+    font-weight: 400; }
+  .enjoy__image-container {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    position: relative;
+    width: 100%; }
+  .enjoy__image {
+    position: relative;
+    width: 100%;
+    z-index: 9; }
+  .enjoy__video-container {
+    width: 100%; }
+  .enjoy__video {
+    position: absolute;
+    max-width: 85%;
+    top: 15%;
+    left: 12%;
+    display: block; }
