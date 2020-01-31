@@ -1,0 +1,43 @@
+// COLOURS
+$color-red: #e50914;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey: #333333;
+
+// FONTS
+
+// FONT SIZE
+$font-size-universal: 62.5%;
+$font-size-m: 50%;
+$font-size-s: 40%;
+
+// FONT FAMILY
+$font-poppins: 'Poppins', sans-serif;
+
+
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: $font-size-universal;
+
+   @media only screen and (max-width: 800px) {
+      font-size: $font-size-m;
+   }
+}
+
+body {
+   box-sizing: border-box;
+   font-family: $font-poppins;
+}
+
+.container {
+   display: grid;
+   grid-template-rows: 1fr;
+}

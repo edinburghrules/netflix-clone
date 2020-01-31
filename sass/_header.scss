@@ -1,0 +1,127 @@
+.header {
+   background: radial-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.9)), url('../img/showcase-bg.jpg');
+   color: $color-white;
+   padding-bottom: 15rem;
+   border-bottom: 1rem solid $color-grey;
+
+   &__nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: max-content;
+      align-items: center;
+      padding: 3rem 4rem;
+   }
+
+   &__logo {
+      height: 3.6rem;
+      width: 13.4rem;
+   }
+
+   &__signin {
+      all: unset;
+      justify-self: end;
+      background-color: $color-red;
+      color: $color-white;
+      padding: 1rem 1.6rem;
+      border-radius: 5%;
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+   }
+
+   &__main {
+      margin-top: 15rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, minmax(min-content, max-content));
+      grid-row-gap: 1rem;
+      text-align: center;
+      justify-items: center;
+
+      @media only screen and (max-width: 600px) {
+         grid-template-rows: repeat(4, auto);
+      }
+
+      @media only screen and (max-width: 500px) {
+         padding: 1rem 3rem;
+         margin-top: 10rem;
+         display: grid;
+         grid-template-columns: 1fr;
+      }
+   }
+
+   &__title {
+      font-size: 4rem;
+      font-weight: 500;
+      grid-column: 2/4;
+
+      @media only screen and (max-width: 500px) {
+        grid-column: 1/-1;
+      }
+
+   }
+
+   &__sub {
+      font-size: 2.2rem;
+      font-weight: 300;
+      grid-column: 2/4;
+
+      @media only screen and (max-width: 500px) {
+         grid-column: 1/-1;
+       }
+   }
+
+   &__form {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-column: 2/4;
+      margin-top: 3rem;
+      height: 6rem;
+      width: 100%;
+
+      @media only screen and (max-width: 600px) {
+         margin-top: 0;
+         grid-template-columns: 1fr;
+         height: 15vw;
+      }
+
+      @media only screen and (max-width: 500px) {
+         grid-column: 1/-1;
+         height: 25vw;
+       }
+   }
+
+   &__input {
+      height: 100%;
+      width: 100%;
+      font-size: 1.6rem;
+      padding: 1rem;
+      color: #333;
+   }
+
+   &__trybtn {
+      all: unset;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6rem;
+      background-color: $color-red;
+      cursor: pointer;
+
+      @media only screen and (max-width: 600px) {
+         margin-top: 1rem;
+      }
+   }
+
+   &__text {
+      font-size: 1.8rem;
+      font-weight: 300;
+      grid-column: 1/-1;
+      margin-top: 2rem;
+      padding: 0 2rem;
+
+      @media only screen and (max-width: 400px) {
+         grid-column: 1/-1;
+      }
+   }
+}
