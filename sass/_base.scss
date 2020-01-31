@@ -27,7 +27,7 @@ $font-poppins: 'Poppins', sans-serif;
 html {
    font-size: $font-size-universal;
 
-   @media only screen and (max-width: 1000px) {
+   @media only screen and (max-width: 1100px) {
       font-size: $font-size-m;
    }
 }

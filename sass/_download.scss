@@ -1,0 +1,17 @@
+.download {
+   background-color: $color-black;
+   color: $color-white;
+   border-bottom: 1rem solid $color-grey;
+   display: grid;
+   grid-template-columns: 1fr 40% 40% 1fr;
+   grid-column-gap: 10rem;
+   align-items: center;
+
+   &__image-container {
+      grid-column: 2/3
+   }
+
+   &__text-container {
+      grid-column: 3/4 ;
+   }
+}
