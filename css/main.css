@@ -132,7 +132,8 @@ body {
   display: grid;
   grid-column-gap: 5rem;
   grid-template-columns: 1fr 40% 40% 1fr;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
   @media only screen and (max-width: 800px) {
     .enjoy {
       padding: 4rem;
@@ -186,7 +187,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 40% 40% 1fr;
   grid-column-gap: 5rem;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
   @media only screen and (max-width: 800px) {
     .download {
       padding: 4rem;
@@ -247,7 +249,7 @@ body {
         font-size: 1.6rem; } }
     @media only screen and (max-width: 400px) {
       .download__tab-heading {
-        font-size: 1.2rem; } }
+        font-size: 1.4rem; } }
   .download__downloading {
     color: #1e90ff;
     font-size: 1.2rem; }
@@ -263,7 +265,8 @@ body {
   border-bottom: 1rem solid #333333;
   grid-column-gap: 5rem;
   align-items: center;
-  padding: 4rem; }
+  padding: 4rem;
+  align-content: center; }
   @media only screen and (max-width: 800px) {
     .watch {
       padding: 4rem;

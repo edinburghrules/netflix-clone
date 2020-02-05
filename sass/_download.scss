@@ -6,6 +6,7 @@
    grid-template-columns: 1fr 40% 40% 1fr;
    grid-column-gap: 5rem;
    align-items: center;
+   align-content: center;
 
    @media only screen and (max-width: 800px) {
       padding: 4rem;
@@ -69,8 +70,6 @@
    &__tab-img {
       width: 18%;
       margin-right: 3%;
-
-
    }
 
    &__gif {
@@ -92,7 +91,7 @@
 
 
       @media only screen and (max-width: 400px) {
-         font-size: 1.2rem;
+         font-size: 1.4rem;
       }
    }
 
