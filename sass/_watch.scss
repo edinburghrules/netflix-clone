@@ -1,0 +1,76 @@
+.watch {
+   background: $color-black;
+   display: grid;
+   grid-template-columns: 1fr 40% 40% 1fr;
+   color: $color-white;
+   border-bottom: 1rem solid $color-grey;
+   grid-column-gap: 5rem;
+   align-items: center;
+   padding: 4rem;
+
+   @media only screen and (max-width: 800px) {
+      padding: 4rem;
+      align-items: start;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+   }
+
+   &__text-container {
+      grid-column: 2/3;
+
+      @media only screen and (max-width: 800px) {
+         grid-column: 1/-1;
+         grid-row: 1/2;
+         text-align: center;
+      }
+   }
+
+   &__title {
+      font-size: 4.4rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+   }
+
+   &__sub {
+      font-size: 2.5rem;
+      font-weight: 400;
+   }
+
+   &__image-container {
+      grid-column: 3/4;
+      position: relative;
+      width: 100%;
+
+      @media only screen and (max-width: 800px) {
+         grid-column: 1/-1;
+      }
+   }
+
+   &__image {
+      position: relative;
+      width: 100%;
+      z-index: 9;
+   }
+
+   &__video-container {
+      width: 100%;
+   }
+
+   &__video {
+      position: absolute;
+      max-width: 62%;
+      top: 10%;
+      left: 18%;
+      display: block;
+
+      @media only screen and (min-width: 1400px) {
+         width: 100%;
+      }
+
+      @media only screen and (max-width: 800px) {
+         width: 100%;
+      }
+   }
+
+}
+

@@ -10,6 +10,9 @@ html {
   @media only screen and (max-width: 1100px) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 40%; } }
 
 body {
   box-sizing: border-box;
@@ -17,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: auto 1fr 1fr; }
+  grid-template-rows: auto 1fr 1fr 1fr; }
 
 .header {
   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("../img/showcase-bg.jpg");
@@ -183,8 +186,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 40% 40% 1fr;
   grid-column-gap: 5rem;
-  align-items: center;
-  padding-bottom: 4rem; }
+  align-items: center; }
   @media only screen and (max-width: 800px) {
     .download {
       padding: 4rem;
@@ -252,3 +254,58 @@ body {
     @media only screen and (max-width: 800px) {
       .download__downloading {
         font-size: 1.4rem; } }
+
+.watch {
+  background: #000000;
+  display: grid;
+  grid-template-columns: 1fr 40% 40% 1fr;
+  color: #ffffff;
+  border-bottom: 1rem solid #333333;
+  grid-column-gap: 5rem;
+  align-items: center;
+  padding: 4rem; }
+  @media only screen and (max-width: 800px) {
+    .watch {
+      padding: 4rem;
+      align-items: start;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content); } }
+  .watch__text-container {
+    grid-column: 2/3; }
+    @media only screen and (max-width: 800px) {
+      .watch__text-container {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        text-align: center; } }
+  .watch__title {
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem; }
+  .watch__sub {
+    font-size: 2.5rem;
+    font-weight: 400; }
+  .watch__image-container {
+    grid-column: 3/4;
+    position: relative;
+    width: 100%; }
+    @media only screen and (max-width: 800px) {
+      .watch__image-container {
+        grid-column: 1/-1; } }
+  .watch__image {
+    position: relative;
+    width: 100%;
+    z-index: 9; }
+  .watch__video-container {
+    width: 100%; }
+  .watch__video {
+    position: absolute;
+    max-width: 62%;
+    top: 10%;
+    left: 18%;
+    display: block; }
+    @media only screen and (min-width: 1400px) {
+      .watch__video {
+        width: 100%; } }
+    @media only screen and (max-width: 800px) {
+      .watch__video {
+        width: 100%; } }

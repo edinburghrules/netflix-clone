@@ -14,8 +14,6 @@ $font-size-s: 40%;
 // FONT FAMILY
 $font-poppins: 'Poppins', sans-serif;
 
-
-
 *,
 *::before,
 *::after {
@@ -30,6 +28,10 @@ html {
    @media only screen and (max-width: 1100px) {
       font-size: $font-size-m;
    }
+
+   @media only screen and (max-width: 600px) {
+      font-size: $font-size-s;
+   }
 }
 
 body {
@@ -39,5 +41,5 @@ body {
 
 .container {
    display: grid;
-   grid-template-rows: auto 1fr 1fr;
+   grid-template-rows: auto 1fr 1fr 1fr;
 }
