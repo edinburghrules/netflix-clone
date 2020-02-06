@@ -1,44 +1,13 @@
-document.querySelector('.faq__plus--one').addEventListener('click', e => {
+   const btnsArr = document.querySelectorAll('.faq__plus');
 
-   const answer = document.querySelector('.faq__content-answer--one');
-   const hide = 'hide';
-
-   answer.classList.toggle(hide);
-
-})
-
-document.querySelector('.faq__plus--two').addEventListener('click', e => {
-
-   const answer = document.querySelector('.faq__content-answer--two');
-   const hide = 'hide';
-
-   answer.classList.toggle(hide);
-
-})
-
-document.querySelector('.faq__plus--three').addEventListener('click', e => {
-
-   const answer = document.querySelector('.faq__content-answer--three');
-   const hide = 'hide';
-
-   answer.classList.toggle(hide);
-   
-})
-
-document.querySelector('.faq__plus--four').addEventListener('click', e => {
-
-   const answer = document.querySelector('.faq__content-answer--four');
-   const hide = 'hide';
-
-   answer.classList.toggle(hide);
-   
-})
-
-document.querySelector('.faq__plus--five').addEventListener('click', e => {
-
-   const answer = document.querySelector('.faq__content-answer--five');
-   const hide = 'hide';
-
-   answer.classList.toggle(hide);
-   
-})
+   btnsArr.forEach((btn, i) => {
+      btn.addEventListener('click',  e => {
+         const answers = document.querySelectorAll('.faq__content-answer');
+         answers[i].classList.toggle('hide')
+            if(answers[i].classList.contains('hide')) {
+               btn.innerHTML = '<i class="fas fa-plus"></i>'
+            } else {
+               btn.innerHTML = '<i class="fas fa-minus"></i>'
+            }
+      })
+   })

@@ -25,11 +25,11 @@ $font-poppins: 'Poppins', sans-serif;
 html {
    font-size: $font-size-universal;
 
-   @media only screen and (max-width: 1100px) {
+   @media only screen and (max-width: 1200px) {
       font-size: $font-size-m;
    }
 
-   @media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 650px) {
       font-size: $font-size-s;
    }
 }
@@ -41,5 +41,5 @@ body {
 
 .container {
    display: grid;
-   grid-template-rows: repeat(6, auto);
+   grid-template-rows: repeat(6, min-content);
 }
