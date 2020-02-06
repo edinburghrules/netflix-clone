@@ -91,31 +91,31 @@
          grid-column: 1/-1;
          height: 25vw;
        }
-   }
 
-   &__input {
-      height: 100%;
-      width: 100%;
-      font-size: 1.6rem;
-      padding: 1rem;
-      color: #333;
-
-      @media only screen and (max-width: 400px) {
-         font-size: 2rem;
+       &-input {
+         height: 100%;
+         width: 100%;
+         font-size: 1.6rem;
+         padding: 1rem;
+         color: #333;
+   
+         @media only screen and (max-width: 400px) {
+            font-size: 2rem;
+         }
       }
-   }
 
-   &__trybtn {
-      all: unset;
-      height: 100%;
-      width: 100%;
-      text-align: center;
-      font-size: 1.6rem;
-      background-color: $color-red;
-      cursor: pointer;
-
-      @media only screen and (max-width: 600px) {
-         margin-top: 1rem;
+      &-trybtn {
+         all: unset;
+         height: 100%;
+         width: 100%;
+         text-align: center;
+         font-size: 1.6rem;
+         background-color: $color-red;
+         cursor: pointer;
+   
+         @media only screen and (max-width: 600px) {
+            margin-top: 1rem;
+         }
       }
    }
 
